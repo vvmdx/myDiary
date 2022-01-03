@@ -1,7 +1,9 @@
 # myDiary
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
-
+- [myDiary](#mydiary)
+- [2022](#2022)
+  - [January](#january)
 # 2022
 
 ## January
@@ -19,6 +21,16 @@ Github连续贡献记录：可以统计总贡献/当前连续贡献天数/最长
 md生成器：http://github-readme-streak-stats.herokuapp.com/demo/
 
 使用方式：生成器里username改成自己的github名字，其他的按个人喜好修改，把markdown复制到你的md里就完事了
+
+**整了个花活\*2**
+
+vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-markdown
+
+1. vscode里搜索拓展：markdown all in one
+2. 用vscode打开md
+3. 用该拓展创建目录
+
+> 各级标题多了可以试试
 
 **github和本地git远程关联**
 
@@ -71,9 +83,20 @@ md生成器：http://github-readme-streak-stats.herokuapp.com/demo/
     * [new branch]      main       -> origin/main
    ```
 
-   
+7. 由于github现在默认是main分支，而本地git init的还是master分支，所以要改下
+
+   - 新建分支`git checkout -b main`
+   - 合并分支`git merge master`
+
+8. 把所有东西添加到缓存区 `git add .`
+
+9. 查看仓库和缓存区哪里不一样（修改了的意思）`git status`
+
+10. 提交到本地 `git commit -m '随便写'`
+
+11. 推送到远程 `git push origin main`
 
 **继续整理sql注入专题总结**
 
-今天看了
+今天总算把报错注入全搞定了，之前还真不知道居然有这么多种姿势，总结了一下其实很多都是因为各种函数的参数格式不正确导致的，或许将来某一天有新的函数的时候，也可以按这个方式找找新的利用姿势也说不定
 
