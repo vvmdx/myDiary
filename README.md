@@ -1,7 +1,7 @@
 # myDiary
 
 <div align=center>
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j)
 </div>
 
 - [myDiary](#mydiary)
