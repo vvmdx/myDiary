@@ -5,12 +5,29 @@
 
 </div>
 
+<div align=center>
+​    <img src="https://ghchart.rshah.org/vvmdx" />
+</div>
+
+
+
 - [myDiary](#mydiary)
 - [2022](#2022)
   - [January](#january)
 # 2022
 
 ## January
+
+| Sunday         | Monday                 | Tuesday                  | Wednesday | Thursday | Friday | Saturday   |
+| -------------- | ---------------------- | ------------------------ | --------- | -------- | ------ | ---------- |
+|                |                        |                          |           |          |        | 1 出去玩了 |
+| 2 学半天玩半天 | [3 开始写日记](#01/03) | [4 做了好多优化](#01/04) |           |          |        |            |
+|                |                        |                          |           |          |        |            |
+|                |                        |                          |           |          |        |            |
+|                |                        |                          |           |          |        |            |
+|                |                        |                          |           |          |        |            |
+
+
 
 ### 01/03
 
@@ -116,12 +133,13 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 
 ### 01/04
 
-**整了个花活**
-
 <details>
     <summary>点击展开</summary>
+**日记readme的优化**
 
-没错这就是花活了，因为想着一篇日记还挺不少的，想到之前好像在github的readme看别人有代码折叠的功能，于是想着能不能把内容折叠起来方便找，就搜了一下，没想到还真的可以，不过typora的md语法和github的GFW还是有点区别的，这个虽然在github的readme上可以折叠，但是在typora里面是不可以折叠的，究其原因应该是typora的折叠属于h5标签，而h5标签里不支持md语法导致的吧（我猜的
+**优化1**：
+
+因为想着一篇日记还挺不少的，想到之前好像在github的readme看别人有代码折叠的功能，于是想着能不能把内容折叠起来方便找，就搜了一下，没想到还真的可以，不过typora的md语法和github的GFW还是有点区别的，这个虽然在github的readme上可以折叠，但是在typora里面是不可以折叠的，究其原因应该是typora的折叠属于h5标签，而h5标签里不支持md语法导致的吧（我猜的
 
 
 格式：
@@ -137,11 +155,9 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 
 <img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220104101045890.png" width=80% />
 
-**日记readme优化**
-
 其实上面也属于优化的一部分...不过图都截了，懒得改标题了
 
-优化1：
+**优化2**：
 
 修改了1月3日记中提到的，放在最上面的连续贡献展示，我嫌之前的太小，而且没居中
 
@@ -157,7 +173,9 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 </div>
 ```
 
+**优化3**：
 
+添加了一个日历，一月下面那个，本来想找个日历的插件，或者看看有没有markdown支持的原生语法，不过没找着，，直接用插入表格的形式作为日历吧...（莫名还挺合适的u1s1）
 
 </details>
 
