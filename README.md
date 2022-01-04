@@ -119,7 +119,18 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
     <summary>点击展开</summary>
 没错这就是花活了，因为想着一篇日记还挺不少的，想到之前好像在github的readme看别人有代码折叠的功能，于是想着能不能把内容折叠起来方便找，就搜了一下，没想到还真的可以，不过typora的md语法和github的GFW还是有点区别的，这个虽然在github的readme上可以折叠，但是在typora里面是不可以折叠的，究其原因应该是typora的折叠属于h5标签，而h5标签里不支持md语法导致的吧（我猜的
 
+格式：
 
+```html
+<details>
+    <summary>点击展开</summary>
+    markdown...
+</details>
+```
+
+如果是在typora里编辑的话，就不用在html块里写了，这是md和GFW语法差异导致的
+
+<img src="D:\hexo\themes\pure\source\images\README\image-20220104101045890.png" alt="image-20220104101045890" style="zoom:67%;" />
 
 </details>
 
