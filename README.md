@@ -1,6 +1,7 @@
 # myDiary
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
+
 - [myDiary](#mydiary)
 - [2022](#2022)
   - [January](#january)
@@ -9,6 +10,11 @@
 ## January
 
 ### 01/03
+
+<details>
+    <summary>点击展开</summary>
+
+
 
 今天突发奇想，想做一下学习记录，当作小日记之类的（主要是想和博客分开，博客记录的都是一些专题，这里更想分享记录一些好玩的有趣的或者提高生产力的东西），一方面可以看看自己学习的进度和效率，一方面通过日记也可以倒逼自己不摸鱼（尽量...
 
@@ -25,12 +31,15 @@ md生成器：http://github-readme-streak-stats.herokuapp.com/demo/
 **整了个花活\*2**
 
 vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-markdown
-
 1. vscode里搜索拓展：markdown all in one
 2. 用vscode打开md
+
 3. 用该拓展创建目录
 
-> 各级标题多了可以试试
+>  各级标题多了可以试试
+
+
+
 
 **github和本地git远程关联**
 
@@ -99,4 +108,18 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 **继续整理sql注入专题总结**
 
 今天总算把报错注入全搞定了，之前还真不知道居然有这么多种姿势，总结了一下其实很多都是因为各种函数的参数格式不正确导致的，或许将来某一天有新的函数的时候，也可以按这个方式找找新的利用姿势也说不定
+
+</details>
+
+### 01/04
+
+**整了个花活**
+
+<details>
+    <summary>点击展开</summary>
+没错这就是花活了，因为想着一篇日记还挺不少的，想到之前好像在github的readme看别人有代码折叠的功能，于是想着能不能把内容折叠起来方便找，就搜了一下，没想到还真的可以，不过typora的md语法和github的GFW还是有点区别的，这个虽然在github的readme上可以折叠，但是在typora里面是不可以折叠的，究其原因应该是typora的折叠属于h5标签，而h5标签里不支持md语法导致的吧（我猜的
+
+
+
+</details>
 
