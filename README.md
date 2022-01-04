@@ -1,8 +1,7 @@
 # myDiary
 
 <div align=center>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j" width=150%/>
-
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j" width=120%/>
 
 </div>
 
@@ -121,7 +120,9 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 
 <details>
     <summary>点击展开</summary>
+
 没错这就是花活了，因为想着一篇日记还挺不少的，想到之前好像在github的readme看别人有代码折叠的功能，于是想着能不能把内容折叠起来方便找，就搜了一下，没想到还真的可以，不过typora的md语法和github的GFW还是有点区别的，这个虽然在github的readme上可以折叠，但是在typora里面是不可以折叠的，究其原因应该是typora的折叠属于h5标签，而h5标签里不支持md语法导致的吧（我猜的
+
 
 格式：
 
@@ -135,6 +136,26 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 如果是在typora里编辑的话，就不用在html块里写了，这是md和GFW语法差异导致的
 
 <img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220104101045890.png" width=80% />
+
+**日记readme优化**
+
+其实上面也属于优化的一部分...不过图都截了，懒得改标题了
+
+优化1：
+
+修改了1月3日记中提到的，放在最上面的连续贡献展示，我嫌之前的太小，而且没居中
+
+```
+# 修改前生成器生成的md如下
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
+
+# 原版点击后会跳转到项目地址 https://git.io/streak-stats，这里也去掉了
+# 添加了大小控制、居中
+<div align=center>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j" width=120%/>
+</div>
+```
 
 
 
