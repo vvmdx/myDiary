@@ -1,6 +1,6 @@
 # myDiary
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
+<div align=center>[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
 
 - [myDiary](#mydiary)
 - [2022](#2022)
@@ -130,7 +130,9 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 
 如果是在typora里编辑的话，就不用在html块里写了，这是md和GFW语法差异导致的
 
-<img src="D:\hexo\themes\pure\source\images\README\image-20220104101045890.png" alt="image-20220104101045890" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220104101045890.png" width="800" />
+
+
 
 </details>
 
