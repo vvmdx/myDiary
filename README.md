@@ -21,21 +21,21 @@
     - [Github readme 部分折叠](#github-readme-部分折叠)
     - [Github连续贡献样式优化](#github连续贡献样式优化)
     - [markdown日历+锚点](#markdown日历锚点)
-    - [github代码贡献图](#github-代码贡献图)
+    - [github代码贡献图](#github代码贡献图)
 
 
 # 2022
 
 ## January
 
-| Sunday         | Monday                | Tuesday                 | Wednesday                   | Thursday | Friday | Saturday   |
-| -------------- | --------------------- | ----------------------- | --------------------------- | -------- | ------ | ---------- |
-|                |                       |                         |                             |          |        | 1 出去玩了 |
-| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 开始做入职准备了](#0105) | 6        | 7      | 8          |
-| 9              | 10                    | 11                      | 12                          | 13       | 14     | 15         |
-| 16             | 17                    | 18                      | 19                          | 20       | 21     | 22         |
-| 23             | 24                    | 25                      | 26                          | 27       | 28     | 29         |
-| 30             | 31                    |                         |                             |          |        |            |
+| Sunday         | Monday                | Tuesday                 | Wednesday           | Thursday | Friday | Saturday   |
+| -------------- | --------------------- | ----------------------- | ------------------- | -------- | ------ | ---------- |
+|                |                       |                         |                     |          |        | 1 出去玩了 |
+| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | 6        | 7      | 8          |
+| 9              | 10                    | 11                      | 12                  | 13       | 14     | 15         |
+| 16             | 17                    | 18                      | 19                  | 20       | 21     | 22         |
+| 23             | 24                    | 25                      | 26                  | 27       | 28     | 29         |
+| 30             | 31                    |                         |                     |          |        |            |
 
 
 
@@ -62,13 +62,24 @@ md生成器：http://github-readme-streak-stats.herokuapp.com/demo/
 
 vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-markdown
 1. vscode里搜索拓展：markdown all in one
-2. 用vscode打开md
 
-3. 用该拓展创建目录
+2. 用vscode打开md，右键找命令面板（或`ctrl+shift+p`）
+
+   <img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220105124111665.png" width=60%/>
+
+3. 点击创建目录即可
 
 >  各级标题多了可以试试
 
+注：标题内含空格的话，生成的目录跳转标志里面也会包含空格，但是在GFW内空格会变为`-`，导致跳转不了
 
+例如
+
+标题：`Github is Good` 
+
+目录：`[Github is Good](#Github is Good)`
+
+Github的索引以url呈现：`https//github.com/user/repo#Github-is-Good`，因此会找不到`Github-is-Good`这个跳转锚点
 
 #### github和本地git远程关联
 
@@ -198,7 +209,7 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 3. github的readme里点击即可跳转，typora里要按住ctrl再点击
 ```
 
-#### github 代码贡献图
+#### github代码贡献图
 
 也就是最上面的第二个图，来自于github的代码贡献图，官方没有直接提供api，不过有获取贡献量的接口和js，因此各路大神也整了不少花里胡哨的，虽然我也想整，但是大多是用在博客里的，放github的readme里属实是ntr，不过还是记录一下，说不定什么时候就开始玩起来了呢
 
@@ -223,6 +234,40 @@ Github上高star的项目2：https://github.com/sallar/github-contributions-char
 本来打算年后入职的，昨晚导师联系后建议年前过去，遂要在一周内买机票、找房子、找找厚衣服（上海比广州冷多了...），还得和学院申请出省，收拾宿舍（大概下学期也不怎么回来了吧），虽然不是第一次实习了，但确实是第一次正儿八经的独自在外面生活，还是有点慌的
 
 昨晚东西整一半去打球了，其实是想把个人日记搭到我的vps上的，今天看看能不能整完
+
+#### 在云服务器上搭建个人云笔记/博客
+
+腾讯云+PuTTY+宝塔
+
+**腾讯云**
+
+使用远程软件登录云服务器，看[官方文档](https://cloud.tencent.com/document/product/1207/44578)就行，十分详细
+
+**PuTTY**
+
+按上面的官方文档搞，不用下载msi去安装，直接下个putty.exe就行
+
+**宝塔**
+
+云服务器安装宝塔官方文档：https://www.bt.cn/admin/servers
+
+1. 登录云服务器切换到root
+
+2. 执行`yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh ed8484bec`安装
+
+3. 完了会给你个登录的url、username、password
+
+   ![image-20220105205054845](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220105205054845.png)
+
+4. 腾讯云控制台防火墙添加规则
+
+   ![image-20220105205807669](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220105205807669.png)
+
+5. 将第3步的外网面板地址复制到浏览器访问
+
+6. 使用第3步给的账密登录，首次登录要先绑定宝塔账号
+
+7. 
 
 </details>
 
