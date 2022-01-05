@@ -21,7 +21,7 @@
     - [Github readme 部分折叠](#github-readme-部分折叠)
     - [Github连续贡献样式优化](#github连续贡献样式优化)
     - [markdown日历+锚点](#markdown日历锚点)
-    - [github 代码贡献图](#github 代码贡献图)
+    - [github代码贡献图](#github-代码贡献图)
 
 
 # 2022
