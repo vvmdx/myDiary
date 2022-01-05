@@ -6,26 +6,36 @@
 </div>
 
 <div align=center>
-​    <img src="https://ghchart.rshah.org/vvmdx" />
+<img src="https://ghchart.rshah.org/vvmdx" width=120%/>
 </div>
 
 
 
-- [myDiary](#mydiary)
-- [2022](#2022)
-  - [January](#january)
+- [January](#january)
+  - [01-03<span id="0103"></span>](#01-03)
+    - [Github连续贡献记录](#github连续贡献记录)
+    - [vscode快速生成github readme目录](#vscode快速生成github-readme目录)
+    - [github和本地git远程关联](#github和本地git远程关联)
+    - [继续整理sql注入专题总结（到时更新到博客上](#继续整理sql注入专题总结到时更新到博客上)
+  - [01-04<span id="0104"></span>](#01-04)
+    - [Github readme 部分折叠](#github-readme-部分折叠)
+    - [Github连续贡献样式优化](#github连续贡献样式优化)
+    - [markdown日历+锚点](#markdown日历锚点)
+    - [github 代码贡献图](#github 代码贡献图)
+
+
 # 2022
 
 ## January
 
-| Sunday         | Monday                | Tuesday                  | Wednesday | Thursday | Friday | Saturday   |
-| -------------- | --------------------- | ------------------------ | --------- | -------- | ------ | ---------- |
-|                |                       |                          |           |          |        | 1 出去玩了 |
-| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#01-04) |           |          |        |            |
-|                |                       |                          |           |          |        |            |
-|                |                       |                          |           |          |        |            |
-|                |                       |                          |           |          |        |            |
-|                |                       |                          |           |          |        |            |
+| Sunday         | Monday                | Tuesday                 | Wednesday                   | Thursday | Friday | Saturday   |
+| -------------- | --------------------- | ----------------------- | --------------------------- | -------- | ------ | ---------- |
+|                |                       |                         |                             |          |        | 1 出去玩了 |
+| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 开始做入职准备了](#0105) | 6        | 7      | 8          |
+| 9              | 10                    | 11                      | 12                          | 13       | 14     | 15         |
+| 16             | 17                    | 18                      | 19                          | 20       | 21     | 22         |
+| 23             | 24                    | 25                      | 26                          | 27       | 28     | 29         |
+| 30             | 31                    |                         |                             |          |        |            |
 
 
 
@@ -38,7 +48,7 @@
 
 今天突发奇想，想做一下学习记录，当作小日记之类的（主要是想和博客分开，博客记录的都是一些专题，这里更想分享记录一些好玩的有趣的或者提高生产力的东西），一方面可以看看自己学习的进度和效率，一方面通过日记也可以倒逼自己不摸鱼（尽量...
 
-**整了个花活**
+#### Github连续贡献记录
 
 Github连续贡献记录：可以统计总贡献/当前连续贡献天数/最长连续贡献天数，倒逼自己每天都记录的神器
 
@@ -48,7 +58,7 @@ md生成器：http://github-readme-streak-stats.herokuapp.com/demo/
 
 使用方式：生成器里username改成自己的github名字，其他的按个人喜好修改，把markdown复制到你的md里就完事了
 
-**整了个花活\*2**
+#### vscode快速生成github readme目录
 
 vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-markdown
 1. vscode里搜索拓展：markdown all in one
@@ -60,8 +70,7 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 
 
 
-
-**github和本地git远程关联**
+#### github和本地git远程关联
 
 1. github新建个仓库
 
@@ -125,19 +134,19 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 
 11. 推送到远程 `git push origin main`
 
-**继续整理sql注入专题总结**
+#### 继续整理sql注入专题总结（到时更新到博客上
 
 今天总算把报错注入全搞定了，之前还真不知道居然有这么多种姿势，总结了一下其实很多都是因为各种函数的参数格式不正确导致的，或许将来某一天有新的函数的时候，也可以按这个方式找找新的利用姿势也说不定
 
 </details>
 
-### 01-04
+### 01-04<span id="0104"></span>
 
 <details>
     <summary>点击展开</summary>
-**日记readme的优化**
 
-**优化1**：
+
+#### Github readme 部分折叠
 
 因为想着一篇日记还挺不少的，想到之前好像在github的readme看别人有代码折叠的功能，于是想着能不能把内容折叠起来方便找，就搜了一下，没想到还真的可以，不过typora的md语法和github的GFW还是有点区别的，这个虽然在github的readme上可以折叠，但是在typora里面是不可以折叠的，究其原因应该是typora的折叠属于h5标签，而h5标签里不支持md语法导致的吧（我猜的
 
@@ -157,7 +166,7 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 
 其实上面也属于优化的一部分...不过图都截了，懒得改标题了
 
-**优化2**：
+#### Github连续贡献样式优化
 
 修改了1月3日记中提到的，放在最上面的连续贡献展示，我嫌之前的太小，而且没居中
 
@@ -173,9 +182,47 @@ vscode快速生成github readme的目录：https://github.com/yzhang-gh/vscode-m
 </div>
 ```
 
-**优化3**：
+#### markdown日历+锚点
 
 添加了一个日历，一月下面那个，本来想找个日历的插件，或者看看有没有markdown支持的原生语法，不过没找着，，直接用插入表格的形式作为日历吧...（莫名还挺合适的u1s1）
+
+插入表格后还有一个，就是可以直接点击日历某一天跳转到详细日记的地方，这里用md原生的页内跳转好像有时不太行
+
+```
+# md原生的页内跳转，其实和普通的超链接是一样的，标题就是需要跳转到的地方
+[名字](#标题)
+# 这里使用锚点来跳转，问题会少一些
+1. 在页面任一位置插入锚点 <span id="随便写"></span>
+	这里用<div id=""></div>或者<a id=""></a>都可以，重点在于id
+2. 使用[名字](#id) id为随便写的内容
+3. github的readme里点击即可跳转，typora里要按住ctrl再点击
+```
+
+#### github 代码贡献图
+
+也就是最上面的第二个图，来自于github的代码贡献图，官方没有直接提供api，不过有获取贡献量的接口和js，因此各路大神也整了不少花里胡哨的，虽然我也想整，但是大多是用在博客里的，放github的readme里属实是ntr，不过还是记录一下，说不定什么时候就开始玩起来了呢
+
+本文用的：https://github.com/2016rshah/githubchart-api
+
+大神博客自己整的：https://zfe.space/post/hexo-githubcalendar.html
+
+Github上高star的项目1：https://github.com/Bloggify/github-calendar
+
+Github上高star的项目2：https://github.com/sallar/github-contributions-chart
+
+顺便授人鱼不如授人与渔，GitHub搜索关键字：github calendar、github chart、github contribution大概就能搜到了
+
+</details>
+
+### 01-05<span id="0105"></span>
+
+<details>
+    <summary>点击展开</summary>
+
+
+本来打算年后入职的，昨晚导师联系后建议年前过去，遂要在一周内买机票、找房子、找找厚衣服（上海比广州冷多了...），还得和学院申请出省，收拾宿舍（大概下学期也不怎么回来了吧），虽然不是第一次实习了，但确实是第一次正儿八经的独自在外面生活，还是有点慌的
+
+昨晚东西整一半去打球了，其实是想把个人日记搭到我的vps上的，今天看看能不能整完
 
 </details>
 
