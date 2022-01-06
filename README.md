@@ -28,14 +28,14 @@
 
 ## January
 
-| Sunday         | Monday                | Tuesday                 | Wednesday           | Thursday | Friday | Saturday   |
-| -------------- | --------------------- | ----------------------- | ------------------- | -------- | ------ | ---------- |
-|                |                       |                         |                     |          |        | 1 出去玩了 |
-| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | 6        | 7      | 8          |
-| 9              | 10                    | 11                      | 12                  | 13       | 14     | 15         |
-| 16             | 17                    | 18                      | 19                  | 20       | 21     | 22         |
-| 23             | 24                    | 25                      | 26                  | 27       | 28     | 29         |
-| 30             | 31                    |                         |                     |          |        |            |
+| Sunday         | Monday                | Tuesday                 | Wednesday           | Thursday   | Friday | Saturday   |
+| -------------- | --------------------- | ----------------------- | ------------------- | ---------- | ------ | ---------- |
+|                |                       |                         |                     |            |        | 1 出去玩了 |
+| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | [6](#0106) | 7      | 8          |
+| 9              | 10                    | 11                      | 12                  | 13         | 14     | 15         |
+| 16             | 17                    | 18                      | 19                  | 20         | 21     | 22         |
+| 23             | 24                    | 25                      | 26                  | 27         | 28     | 29         |
+| 30             | 31                    |                         |                     |            |        |            |
 
 
 
@@ -261,13 +261,193 @@ Github上高star的项目2：https://github.com/sallar/github-contributions-char
 
 4. 腾讯云控制台防火墙添加规则
 
-   ![image-20220105205807669](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220105205807669.png)
+   <img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220105205807669.png" width=60%/>
+
+   
 
 5. 将第3步的外网面板地址复制到浏览器访问
 
 6. 使用第3步给的账密登录，首次登录要先绑定宝塔账号
 
-7. 
+7. 登录后会让你选LNMP或者LAMP一键安装，这个看你自己，我因为只是想搭个博客就没选
+
+8. 左边栏 >> 面板设置：修改面板用户和面板密码
+
+   > 修改用户密码记得先保存一下默认的，因为修改其中一个会直接退出并重新登录，要是没有先保存好另一个就麻烦了
+   >
+   > 若没有保存默认账密，可以登录vps后`su root`切换到root下，`bt`命令查看默认信息（14）
+   >
+   > ![image-20220106100435225](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220106100435225.png)
+
+9. 今天先整到这...剩下的明天继续
+
+</details>
+
+
+
+### 01-06<span id="0106"></span>
+
+<details>
+    <summary>点击展开</summary>
+ 
+
+#### （续）在云服务器上搭建个人云笔记/博客
+
+腾讯云+PuTTY+宝塔
+
++腾讯云域名+docify
+
+**腾讯云域名**
+
+1. 直接上官网找一个喜欢的买就是了 https://dnspod.cloud.tencent.com/
+
+2. [域名注册指引官方文档](https://cloud.tencent.com/document/product/242/49743)
+
+3. 买完就按照提示一步一步搞
+
+   ![image-20220106103707531](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220106103707531.png)
+
+4. [域名实名认证](https://console.cloud.tencent.com/domain/all-domain)
+
+5. [将域名指向一个ip](https://cloud.tencent.com/document/product/302/3449)
+
+6. 解析生效需要等待一段时间，等待过后`ping 域名`，若ip为你的vps ip，则解析生效
+
+7. [备案流程](https://cloud.tencent.com/document/product/243/18909)
+
+
+
+**docify**
+
+官网：https://docsify.js.org/#/zh-cn/  （官网就是用docify做的，可以看到页面还是很清爽的）
+
+docify命令行文档：https://github.com/docsifyjs/docsify-cli
+
+1. 全局安装
+
+   `npm i docsify-cli -g`
+
+2. 初始化项目
+
+   `docsify init ./docs`
+
+   初始化后目录下又有个`./docs`目录，其中有
+
+3. 
+
+4. 
+
+#### Git push报错
+
+```bash
+error: failed to push some refs to ...
+hint: Updates were rejected because a pushed branch tip is behind its remote counterpart.
+```
+
+原因：本地分支落后于远程分支，
+
+1. 初始化仓库时同时生成了readme.md，而本地仓库没有这个提交记录，因此会落后于远程分支（远程有一个readme.md的commit）
+2. 自己在github上手动修改了仓库，而本地仓库也不知道远程有修改，导致落后于远程分支（我就是手动在github上编辑readme.md并commit，导致本地push不上去）
+
+解决：
+
+1. 合并分支 `git pull --rebase origin main`
+2. 可能需要一个 `git rebase --continue`，具体看命令执行后的提示
+3. 完成了就可以正常操作了
+
+
+
+#### python开启http服务却访问不了
+
+在vps上用`python3 -m http.server [port]`（port为可选参数）开启一个http服务，公网访问`http://ip:8000`（8000为默认端口，如果不指定port的话）即可访问
+
+若访问不了
+
+1. ping你的ip看看能不能ping通
+
+2. ping得通：检查腾讯云的防火墙规则，有没有放行8000端口，没有的话按前面配宝塔8888端口的方式配置
+
+3. 放行后还是访问不了：机器本身的防火墙问题，关闭即可
+
+   > 注意centos 7开始，防火墙叫firewall而不是iptables
+
+   - 查看防火墙 `systemctl status firewalld`，若有绿色的`active(running)`则表示防火墙已开启
+   - 关闭防火墙 `systemctl stop firewalld`，查看状态，若为`inactive(dead)`则表示已关闭
+   - 取消开启启动防火墙 `systemctl disable firewalld`
+
+4. 到这就可以正常访问python开启的http服务了
+
+
+
+#### Linux查看端口占用并杀进程
+
+1. 查看端口使用情况：`netstat -anp`
+
+2. 查看端口对应的应用程序：`lsof -i:[port]`
+
+3. 杀进程：`kill -9 [pid]`
+
+   > `kill -sig pid`
+   >
+   > sig为signal，意思为发信号给进程的意思
+   >
+   > | 信号名 | 数字 | 描述             |
+   > | ------ | ---- | ---------------- |
+   > | INT    | 2    | =ctrl+c 结束进程 |
+   > | QUIT   | 3    | =ctrl+\ 结束进程 |
+   > | KILL   | 9    | 强杀             |
+
+
+
+#### Xshell免费版
+
+下载链接：https://www.netsarang.com/en/free-for-home-school/
+
+填写名字和邮箱后会把下载链接发到邮箱里
+
+打开xshell后，【文件】 => 【新建】 => 随便填个名称，主机为公网ip => 确定后登录即可（我用的是账密登录）
+
+<img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220106195609015.png" width=80% />
+
+
+
+#### Centos7安装npm
+
+[nodejs中文官网](http://nodejs.cn/)
+
+[npm淘宝镜像](https://npm.taobao.org/mirrors/node)
+
+```bash
+# 1. wget下载node.js
+wget https://npm.taobao.org/mirrors/node/v16.13.1/node-v16.13.1-linux-x64.tar.gz
+# 2. 解压
+tar -xvf node-v16.13.1-linux-x64.tar.gz
+# 3. 重命名
+mv node-v16.13.1-linux-x64 node
+# 4. 移动文件夹（下错地方了...）
+mv node /usr/local/node
+# 5. 把压缩包删了
+rm node-v16.13.1-linux-x64.tar.gz
+# 6. 配环境变量
+vi /etc/profile
+	# i进入编辑模式 文件最后添加
+	export NODE_HOME=/usr/local/node
+	export PATH=$NODE_HOME/bin:$PATH
+	# esc退出编辑模式 :wq保存并退出
+# 7. 刷新配置
+source /etc/profile
+# 8. 查看版本，有就完事
+node -v
+v16.13.1
+npm -v
+8.1.2
+```
+
+
+
+
+
+
 
 </details>
 
