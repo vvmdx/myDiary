@@ -10,32 +10,46 @@
 </div>
 
 
+- [myDiary](#mydiary)
+- [2022](#2022)
+  - [January](#january)
+    - [01-03](#01-03)
+      - [Github连续贡献记录](#github连续贡献记录)
+      - [vscode快速生成github readme目录](#vscode快速生成github-readme目录)
+      - [github和本地git远程关联](#github和本地git远程关联)
+      - [继续整理sql注入专题总结（到时更新到博客上](#继续整理sql注入专题总结到时更新到博客上)
+    - [01-04](#01-04)
+      - [Github readme 部分折叠](#github-readme-部分折叠)
+      - [Github连续贡献样式优化](#github连续贡献样式优化)
+      - [markdown日历+锚点](#markdown日历锚点)
+      - [github代码贡献图](#github代码贡献图)
+    - [01-05](#01-05)
+      - [在云服务器上搭建个人云笔记/博客](#在云服务器上搭建个人云笔记博客)
+    - [01-06](#01-06)
+      - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客)
+      - [Git push报错](#git-push报错)
+      - [python开启http服务却访问不了](#python开启http服务却访问不了)
+      - [Linux查看端口占用并杀进程](#linux查看端口占用并杀进程)
+      - [Xshell免费版](#xshell免费版)
+      - [Centos7安装npm](#centos7安装npm)
+    - [01-07](#01-07)
+      - [CentOS-7安装Nginx](#centos-7安装nginx)
+      - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客-1)
 
-- [January](#january)
-  - [01-03<span id="0103"></span>](#01-03)
-    - [Github连续贡献记录](#github连续贡献记录)
-    - [vscode快速生成github readme目录](#vscode快速生成github-readme目录)
-    - [github和本地git远程关联](#github和本地git远程关联)
-    - [继续整理sql注入专题总结（到时更新到博客上](#继续整理sql注入专题总结到时更新到博客上)
-  - [01-04<span id="0104"></span>](#01-04)
-    - [Github readme 部分折叠](#github-readme-部分折叠)
-    - [Github连续贡献样式优化](#github连续贡献样式优化)
-    - [markdown日历+锚点](#markdown日历锚点)
-    - [github代码贡献图](#github代码贡献图)
 
 
 # 2022
 
 ## January
 
-| Sunday         | Monday                | Tuesday                 | Wednesday           | Thursday   | Friday | Saturday   |
-| -------------- | --------------------- | ----------------------- | ------------------- | ---------- | ------ | ---------- |
-|                |                       |                         |                     |            |        | 1 出去玩了 |
-| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | [6](#0106) | 7      | 8          |
-| 9              | 10                    | 11                      | 12                  | 13         | 14     | 15         |
-| 16             | 17                    | 18                      | 19                  | 20         | 21     | 22         |
-| 23             | 24                    | 25                      | 26                  | 27         | 28     | 29         |
-| 30             | 31                    |                         |                     |            |        |            |
+| Sunday         | Monday                | Tuesday                 | Wednesday           | Thursday              | Friday                  | Saturday   |
+| -------------- | --------------------- | ----------------------- | ------------------- | --------------------- | ----------------------- | ---------- |
+|                |                       |                         |                     |                       |                         | 1 出去玩了 |
+| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | [6 今天事好多](#0106) | [7 整完云日记了](#0107) | 8          |
+| 9              | 10                    | 11                      | 12                  | 13                    | 14                      | 15         |
+| 16             | 17                    | 18                      | 19                  | 20                    | 21                      | 22         |
+| 23             | 24                    | 25                      | 26                  | 27                    | 28                      | 29         |
+| 30             | 31                    |                         |                     |                       |                         |            |
 
 
 
@@ -317,26 +331,6 @@ Github上高star的项目2：https://github.com/sallar/github-contributions-char
 
 
 
-**docify**
-
-官网：https://docsify.js.org/#/zh-cn/  （官网就是用docify做的，可以看到页面还是很清爽的）
-
-docify命令行文档：https://github.com/docsifyjs/docsify-cli
-
-1. 全局安装
-
-   `npm i docsify-cli -g`
-
-2. 初始化项目
-
-   `docsify init ./docs`
-
-   初始化后目录下又有个`./docs`目录，其中有
-
-3. 
-
-4. 
-
 #### Git push报错
 
 ```bash
@@ -445,9 +439,126 @@ npm -v
 
 
 
+</details>
+
+
+
+### 01-07<span id="0107"></span>
+
+<details>
+    <summary>点击展开</summary>
+ 
+
+#### CentOS-7安装Nginx
+
+Nginx下载官网：https://nginx.org/en/download.html
+
+1. 切换到`usr/local`
+
+   `cd /usr/local`
+
+2. 下载nginx压缩包
+
+   `wget https://nginx.org/download/nginx-1.20.2.tar.gz`
+
+3. 解压
+
+   `tar -zxvf nginx-1.20.2.tar.gz`
+
+4. 删除压缩包
+
+   `rm nginx-1.20.2.tar.gz`
+
+5. 进入目录`/usr/local/nginx-1.20.2`，编译安装
+
+   `./configure --prefix=usr/local/nginx`
+
+   `make&&make install`
+
+6. 切换到nginx目录，可以发现其下有了4个目录`conf  html  logs  sbin`
+
+7. 进入`/usr/local/sbin`，执行`./nginx`即开启了nginx服务
+
+
+
+#### （续）在云服务器上搭建个人云笔记/博客
+
+**docify**
+
+官网：https://docsify.js.org/#/zh-cn/  （官网就是用docify做的，可以看到页面还是很清爽的）
+
+docify命令行文档：https://github.com/docsifyjs/docsify-cli
+
+1. 全局安装
+
+   `npm i docsify-cli -g`
+
+2. 初始化项目
+
+   `docsify init ./docs`
+
+3. 部署到nginx上
+
+   ```
+   # 这是docify官方文档推荐的，这个alias字段不知道是啥，实测会导致访问后403，将alias修改为root就可以了（nginx默认就是root）
+   server {
+     listen 80;
+     server_name  your.domain.com;
+   
+     location / {
+       alias /path/to/dir/of/docs/;
+       index index.html;
+     }
+   }
+   ```
+
+4. 上传笔记文件
+
+   ```bash
+   # scp文件上传 或者用宝塔也行
+   # scp 本地文件地址 vps账号@vps公网ip:服务器文件地址
+   scp README. root@x.x.x.x:/root/evil.dtd
+   然后输入vps密码就可以了
+   ```
+
+   
+
+5. 
+
+
+
+**Nginx部署docify出现403**
+
+1. 启动用户和工作用户不一样
+
+   ```bash
+   [root@VM-8-17-centos ~]# ps -ef|grep nginx
+   root      635630       1  0 11:46 ?        00:00:00 nginx: master process ./nginx
+   nobody    786935  635630  0 21:55 ?        00:00:00 nginx: worker process
+   root      786985  779686  0 21:55 pts/0    00:00:00 grep --color=auto nginx
+   ```
+
+   可以看到`worker process`是nobody而启动用户是root
+
+   修改配置文件`vi /usr/local/nginx/conf/nginx.conf`，第一行的`#user nobody`改为`user root`
+
+   修改后进入`/usr/local/sbin`目录，执行`./nginx -s reload`重新加载
+
+2. web目录权限问题
+
+   修改权限`chmod -R 777 web目录`
+
+   修改完了同样进入`/usr/local/sbin`目录，执行`./nginx -s reload`重新加载
+
+3. 参考：[CSDN博客](https://blog.csdn.net/qq_35843543/article/details/81561240)
+
 
 
 
 
 </details>
+
+
+
+
 
