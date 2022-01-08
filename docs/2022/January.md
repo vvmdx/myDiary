@@ -1,41 +1,27 @@
-# MyDiary
-
-<div align=center>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=vvmdx&theme=gruvbox&date_format=%5BY.%5Dn.j" width=120%/>
-
-</div>
-
-<div align=center>
-<img src="https://ghchart.rshah.org/vvmdx" width=120%/>
-</div>
-
-
-- [myDiary](#mydiary)
-- [2022](#2022)
-  - [January](#january)
-    - [01-03](#01-03)
-      - [Github连续贡献记录](#github连续贡献记录)
-      - [vscode快速生成github readme目录](#vscode快速生成github-readme目录)
-      - [github和本地git远程关联](#github和本地git远程关联)
-      - [继续整理sql注入专题总结（到时更新到博客上](#继续整理sql注入专题总结到时更新到博客上)
-    - [01-04](#01-04)
-      - [Github readme 部分折叠](#github-readme-部分折叠)
-      - [Github连续贡献样式优化](#github连续贡献样式优化)
-      - [markdown日历+锚点](#markdown日历锚点)
-      - [github代码贡献图](#github代码贡献图)
-    - [01-05](#01-05)
-      - [在云服务器上搭建个人云笔记/博客](#在云服务器上搭建个人云笔记博客)
-    - [01-06](#01-06)
-      - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客)
-      - [Git push报错](#git-push报错)
-      - [python开启http服务却访问不了](#python开启http服务却访问不了)
-      - [Linux查看端口占用并杀进程](#linux查看端口占用并杀进程)
-      - [Xshell免费版](#xshell免费版)
-      - [Centos7安装npm](#centos7安装npm)
-    - [01-07](#01-07)
-      - [CentOS-7安装Nginx](#centos-7安装nginx)
-      - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客-1)
-      - [Nginx部署docify出现403](#Nginx部署docify出现403)
+- [January](#january)
+  - [01-03](#01-03)
+    - [Github连续贡献记录](#github连续贡献记录)
+    - [vscode快速生成github readme目录](#vscode快速生成github-readme目录)
+    - [github和本地git远程关联](#github和本地git远程关联)
+    - [继续整理sql注入专题总结（到时更新到博客上](#继续整理sql注入专题总结到时更新到博客上)
+  - [01-04](#01-04)
+    - [Github readme 部分折叠](#github-readme-部分折叠)
+    - [Github连续贡献样式优化](#github连续贡献样式优化)
+    - [markdown日历+锚点](#markdown日历锚点)
+    - [github代码贡献图](#github代码贡献图)
+  - [01-05](#01-05)
+    - [在云服务器上搭建个人云笔记/博客](#在云服务器上搭建个人云笔记博客)
+  - [01-06](#01-06)
+    - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客)
+    - [Git push报错](#git-push报错)
+    - [python开启http服务却访问不了](#python开启http服务却访问不了)
+    - [Linux查看端口占用并杀进程](#linux查看端口占用并杀进程)
+    - [Xshell免费版](#xshell免费版)
+    - [Centos7安装npm](#centos7安装npm)
+  - [01-07](#01-07)
+    - [CentOS-7安装Nginx](#centos-7安装nginx)
+    - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客-1)
+    - [Nginx部署docify出现403](#Nginx部署docify出现403)
 
 
 
@@ -498,13 +484,7 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
    `docsify init ./docs`
 
-3. 本地预览
-
-   `docsify serve ./docs`
-   
-   访问localhost:3000即可预览效果
-   
-4. 部署到nginx上
+3. 部署到nginx上
 
    ```
    # 这是docsify官方文档推荐的，这个alias字段不知道是啥，实测会导致访问后403，将alias修改为root就可以了（nginx默认就是root）
@@ -519,7 +499,7 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
    }
    ```
 
-5. 上传笔记文件
+4. 上传笔记文件
 
    ```bash
    # scp文件上传 或者用宝塔也行
