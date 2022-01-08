@@ -36,6 +36,7 @@
       - [CentOS-7安装Nginx](#centos-7安装nginx)
       - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客-1)
       - [Nginx部署docify出现403](#Nginx部署docify出现403)
+    - [01-08](#01-08)
 
 
 
@@ -43,14 +44,14 @@
 
 ## January
 
-| Sunday         | Monday                | Tuesday                 | Wednesday           | Thursday              | Friday                  | Saturday   |
-| -------------- | --------------------- | ----------------------- | ------------------- | --------------------- | ----------------------- | ---------- |
-|                |                       |                         |                     |                       |                         | 1 出去玩了 |
-| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | [6 今天事好多](#0106) | [7 整完云日记了](#0107) | 8          |
-| 9              | 10                    | 11                      | 12                  | 13                    | 14                      | 15         |
-| 16             | 17                    | 18                      | 19                  | 20                    | 21                      | 22         |
-| 23             | 24                    | 25                      | 26                  | 27                    | 28                      | 29         |
-| 30             | 31                    |                         |                     |                       |                         |            |
+| Sunday         | Monday                | Tuesday                 | Wednesday           | Thursday              | Friday                  | Saturday               |
+| -------------- | --------------------- | ----------------------- | ------------------- | --------------------- | ----------------------- | ---------------------- |
+|                |                       |                         |                     |                       |                         | 1 出去玩了             |
+| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | [6 今天事好多](#0106) | [7 整完云日记了](#0107) | [8 优化docsify](#0108) |
+| 9              | 10                    | 11                      | 12                  | 13                    | 14                      | 15                     |
+| 16             | 17                    | 18                      | 19                  | 20                    | 21                      | 22                     |
+| 23             | 24                    | 25                      | 26                  | 27                    | 28                      | 29                     |
+| 30             | 31                    |                         |                     |                       |                         |                        |
 
 
 
@@ -575,7 +576,9 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
 #### vps+docsify域名访问和ip访问不一致问题
 
-昨晚留下来的问题
+昨晚留下来的问题，部署项目后通过ip可以立即访问到，但是通过域名没办法立即访问（依旧是默认页面）
+
+但是早上重新尝试的时候发现又同步了，不太明白原因
 
 
 
@@ -583,17 +586,30 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
 其实这是一个通用的问题，当使用`npm install [package] -g`全局安装后，会在`nodejs/node_global`下生成几个文件例如
 
-![image-20220108105151284](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220108105151284.png)
+<img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220108105151284.png" width=60%/>
 
 因此需要将该路径添加到环境变量 >> Path中即可
 
-![image-20220108110402230](D:\hexo\themes\pure\source\images\README\image-20220108110402230.png)
+<img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220108110402230.png" width=60%/>
 
 
 
-#### Docsify优化
+#### Windows右键新建添加Markdown选项
+
+参考：[CSDN博客](https://blog.csdn.net/qq_39309348/article/details/108627819)
+
+win+r 输入 regedit 打开注册表
+
+1. 找到`计算机\HKEY_CLASSES_ROOT\.md`，修改默认值为`typora.md`
+2. 在`计算机\HKEY_CLASSES_ROOT\.md`下新建项`ShellNew`
+3. 在`计算机\HKEY_CLASSES_ROOT\.md\ShellNew`下新建字符串值为`NullFile`，修改值为`typora.md`
+4. 完事右键就有新建markdown file了
 
 
+
+#### Docsify个性化
+
+今天几乎一整天都在搞这个了，到晚上终于基本搞定了，本来想白天搞完晚上回宿舍收东西，没想到插件研究了好久，等过几天安顿下来再写个教程吧
 
 
 

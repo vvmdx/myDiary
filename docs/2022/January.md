@@ -1,46 +1,17 @@
-- [January](#january)
-  - [01-03](#01-03)
-    - [Github连续贡献记录](#github连续贡献记录)
-    - [vscode快速生成github readme目录](#vscode快速生成github-readme目录)
-    - [github和本地git远程关联](#github和本地git远程关联)
-    - [继续整理sql注入专题总结（到时更新到博客上](#继续整理sql注入专题总结到时更新到博客上)
-  - [01-04](#01-04)
-    - [Github readme 部分折叠](#github-readme-部分折叠)
-    - [Github连续贡献样式优化](#github连续贡献样式优化)
-    - [markdown日历+锚点](#markdown日历锚点)
-    - [github代码贡献图](#github代码贡献图)
-  - [01-05](#01-05)
-    - [在云服务器上搭建个人云笔记/博客](#在云服务器上搭建个人云笔记博客)
-  - [01-06](#01-06)
-    - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客)
-    - [Git push报错](#git-push报错)
-    - [python开启http服务却访问不了](#python开启http服务却访问不了)
-    - [Linux查看端口占用并杀进程](#linux查看端口占用并杀进程)
-    - [Xshell免费版](#xshell免费版)
-    - [Centos7安装npm](#centos7安装npm)
-  - [01-07](#01-07)
-    - [CentOS-7安装Nginx](#centos-7安装nginx)
-    - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客-1)
-    - [Nginx部署docify出现403](#Nginx部署docify出现403)
-
-
-
-# 2022
-
 ## January
 
-| Sunday         | Monday                | Tuesday                 | Wednesday           | Thursday              | Friday                  | Saturday   |
-| -------------- | --------------------- | ----------------------- | ------------------- | --------------------- | ----------------------- | ---------- |
-|                |                       |                         |                     |                       |                         | 1 出去玩了 |
-| 2 学半天玩半天 | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | [6 今天事好多](#0106) | [7 整完云日记了](#0107) | 8          |
-| 9              | 10                    | 11                      | 12                  | 13                    | 14                      | 15         |
-| 16             | 17                    | 18                      | 19                  | 20                    | 21                      | 22         |
-| 23             | 24                    | 25                      | 26                  | 27                    | 28                      | 29         |
-| 30             | 31                    |                         |                     |                       |                         |            |
+| Sunday         | Monday                  | Tuesday                   | Wednesday             | Thursday                | Friday                    | Saturday                 |
+| -------------- | ----------------------- | ------------------------- | --------------------- | ----------------------- | ------------------------- | ------------------------ |
+|                |                         |                           |                       |                         |                           | 1 出去玩了               |
+| 2 学半天玩半天 | [3 开始写日记](#_01-03) | [4 做了好多优化](#_01-04) | [5 准备入职](#_01-05) | [6 今天事好多](#_01-06) | [7 整完云日记了](#_01-07) | [8 docsify优化](#_01-08) |
+| 9              | 10                      | 11                        | 12                    | 13                      | 14                        | 15                       |
+| 16             | 17                      | 18                        | 19                    | 20                      | 21                        | 22                       |
+| 23             | 24                      | 25                        | 26                    | 27                      | 28                        | 29                       |
+| 30             | 31                      |                           |                       |                         |                           |                          |
 
 
 
-### 01-03<span id="0103"></span>
+### 01-03
 
 <details>
     <summary>点击展开</summary>
@@ -152,7 +123,7 @@ Github的索引以url呈现：`https//github.com/user/repo#Github-is-Good`，因
 
 </details>
 
-### 01-04<span id="0104"></span>
+### 01-04
 
 <details>
     <summary>点击展开</summary>
@@ -226,7 +197,7 @@ Github上高star的项目2：https://github.com/sallar/github-contributions-char
 
 </details>
 
-### 01-05<span id="0105"></span>
+### 01-05
 
 <details>
     <summary>点击展开</summary>
@@ -286,7 +257,7 @@ Github上高star的项目2：https://github.com/sallar/github-contributions-char
 
 
 
-### 01-06<span id="0106"></span>
+### 01-06
 
 <details>
     <summary>点击展开</summary>
@@ -430,7 +401,7 @@ npm -v
 
 
 
-### 01-07<span id="0107"></span>
+### 01-07
 
 <details>
     <summary>点击展开</summary>
@@ -547,7 +518,7 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
 
 
-### 01-08<span id="0108"></span>
+### 01-08
 
 <details>
     <summary>点击展开</summary>
@@ -555,7 +526,9 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
 #### vps+docsify域名访问和ip访问不一致问题
 
-昨晚留下来的问题
+昨晚留下来的问题，部署项目后通过ip可以立即访问到，但是通过域名没办法立即访问（依旧是默认页面）
+
+但是早上重新尝试的时候发现又同步了，不太明白原因
 
 
 
@@ -573,7 +546,7 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
 #### Docsify优化
 
-
+整理一下发现挺多的，打算放到博客上
 
 
 

@@ -17,5 +17,5 @@
 
 
 
-[MyBlog](https://vvmdx.github.io/)[Get Started](#mydiary)[Github](https://github.com/vvmdx/myDiary)
+[MyBlog](https://vvmdx.github.io/)[Get Started](#mydiary)
 
