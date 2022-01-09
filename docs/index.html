@@ -31,7 +31,12 @@
 			countable:true,
 			fontsize:'1.5em',
 			color:'rgb(90,90,90)',
-			language:'english'
+			language:'english',
+			localization: {
+				words: "",
+				minute: ""
+			},
+			isExpected: true
 		},
 		copyCode: {
 			buttonText : 'Copy to clipboard',
@@ -120,7 +125,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script> -->
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script> -->
 </body>
 </html>
@@ -129,13 +135,13 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(35%, -45%);
+    transform: translate(40%, -45%);
     padding: 0.25em 0.35em;
-    border-radius: 3px;
+    border-radius: 10px;
     background: red;
     color: white;
     font-family: sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
   }
 </style>
