@@ -640,3 +640,33 @@ win+r 输入 regedit 打开注册表
 
 </details>
 
+
+
+### 01-16<span id='0116'></span>
+
+<details>
+    <summary>点击展开</summary>
+ 
+
+#### windows设置文件关联（使用某默认应用打开某文件类型）
+
+源于公司的网会ban掉一些国外的官网下载，有些应用软件管家并没有即时更新，因此要从自己的电脑拷贝文件过来，但是拷贝的文件往往没有配置环境变量和注册表，因此需要手动设置默认打开
+
+1. ctrl+s 默认应用
+
+   <img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220116120322896.png" width=80%/>
+
+2. 打开“按文件类型指定默认应用”
+
+3. 找到 “.md” ，将其右边的应用设置为typora（其他类型文件同理）
+
+</details>
+
+
+
+### 01-21<span id="0121"></span>
+
+<details>
+    <summary>点击展开</summary>
+</details>
+
