@@ -10,33 +10,45 @@
 </div>
 
 
-- [myDiary](#mydiary)
+- [MyDiary](#mydiary)
 - [2022](#2022)
   - [January](#january)
-    - [01-03](#01-03)
+    - [01-03<span id="0103"></span>](#01-03)
       - [Github连续贡献记录](#github连续贡献记录)
       - [vscode快速生成github readme目录](#vscode快速生成github-readme目录)
       - [github和本地git远程关联](#github和本地git远程关联)
       - [继续整理sql注入专题总结（到时更新到博客上](#继续整理sql注入专题总结到时更新到博客上)
-    - [01-04](#01-04)
+    - [01-04<span id="0104"></span>](#01-04)
       - [Github readme 部分折叠](#github-readme-部分折叠)
       - [Github连续贡献样式优化](#github连续贡献样式优化)
       - [markdown日历+锚点](#markdown日历锚点)
       - [github代码贡献图](#github代码贡献图)
-    - [01-05](#01-05)
+    - [01-05<span id="0105"></span>](#01-05)
       - [在云服务器上搭建个人云笔记/博客](#在云服务器上搭建个人云笔记博客)
-    - [01-06](#01-06)
+    - [01-06<span id="0106"></span>](#01-06)
       - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客)
       - [Git push报错](#git-push报错)
       - [python开启http服务却访问不了](#python开启http服务却访问不了)
       - [Linux查看端口占用并杀进程](#linux查看端口占用并杀进程)
       - [Xshell免费版](#xshell免费版)
       - [Centos7安装npm](#centos7安装npm)
-    - [01-07](#01-07)
+    - [01-07<span id="0107"></span>](#01-07)
       - [CentOS-7安装Nginx](#centos-7安装nginx)
       - [（续）在云服务器上搭建个人云笔记/博客](#续在云服务器上搭建个人云笔记博客-1)
-      - [Nginx部署docify出现403](#Nginx部署docify出现403)
-    - [01-08](#01-08)
+      - [Nginx部署docsify出现403](#nginx部署docsify出现403)
+    - [01-08<span id="0108"></span>](#01-08)
+      - [vps+docsify域名访问和ip访问不一致问题](#vpsdocsify域名访问和ip访问不一致问题)
+      - [解决windows下docsify通过npm全局安装命令行不生效的问题](#解决windows下docsify通过npm全局安装命令行不生效的问题)
+      - [Windows右键新建添加Markdown选项](#windows右键新建添加markdown选项)
+      - [Docsify个性化](#docsify个性化)
+    - [01-09<span id='0109'></span>](#01-09)
+    - [01-10<span id='0110'></span>](#01-10)
+    - [01-16<span id='0116'></span>](#01-16)
+      - [windows设置文件关联（使用某默认应用打开某文件类型）](#windows设置文件关联使用某默认应用打开某文件类型)
+    - [01-25<span id="0125"></span>](#01-25)
+      - [Git Bash一个报错](#git-bash一个报错)
+      - [Git Bash在pull时另一个报错](#git-bash在pull时另一个报错)
+      - [Docsify三连](#docsify三连)
 
 
 
@@ -48,9 +60,9 @@
 | ------------------- | --------------------- | ----------------------- | ------------------- | --------------------- | ----------------------- | ---------------------- |
 |                     |                       |                         |                     |                       |                         | 1 出去玩了             |
 | 2 学半天玩半天      | [3 开始写日记](#0103) | [4 做了好多优化](#0104) | [5 准备入职](#0105) | [6 今天事好多](#0106) | [7 整完云日记了](#0107) | [8 优化docsify](#0108) |
-| [9 整理插件](#0109) | [10 备案](#0110)      | 11 今天飞上海！         | 12 租房真贵啊       | 13                    | 14                      | 15                     |
+| [9 整理插件](#0109) | [10 备案](#0110)      | 11                      | 12                  | 13                    | 14                      | 15                     |
 | 16                  | 17                    | 18                      | 19                  | 20                    | 21                      | 22                     |
-| 23                  | 24                    | 25                      | 26                  | 27                    | 28                      | 29                     |
+| 23                  | 24                    | [25 搞定笔记了](#0125)  | 26                  | 27                    | 28                      | 29                     |
 | 30                  | 31                    |                         |                     |                       |                         |                        |
 
 
@@ -479,7 +491,7 @@ Nginx下载官网：https://nginx.org/en/download.html
 
 6. 切换到nginx目录，可以发现其下有了4个目录`conf  html  logs  sbin`
 
-7. 进入`/usr/local/sbin`，执行`./nginx`即开启了nginx服务
+7. 进入`/usr/local/nginx/sbin`，执行`./nginx`即开启了nginx服务
 
 
 
@@ -664,9 +676,82 @@ win+r 输入 regedit 打开注册表
 
 
 
-### 01-21<span id="0121"></span>
+### 01-25<span id="0125"></span>
 
 <details>
     <summary>点击展开</summary>
+ 
+
+#### Git Bash一个报错
+
+报错内容：
+
+```
+error: fsmonitor_ipc__send_query: unspecified error on '.git/fsmonitor--daem'
+```
+
+参考StackOverflow：https://stackoverflow.com/questions/68915288/git-bash-error-fsmonitor-ipc-send-query
+
+大概就是开个任务管理器，把里面Git的进程都结束掉就行（亲测可行）
+
+#### Git Bash在pull时另一个报错
+
+报错内容：执行`git pull origin main`时的警告
+
+```
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+```
+
+解决：先`git config --global pull.ff only`再`git pull origin main`
+
+参考：[StackOverflow](https://stackoverflow.com/questions/65971134/warning-pulling-without-specifying-how-to-reconcile-divergent-branches-is-disco)、[CSDN](https://blog.csdn.net/wq6ylg08/article/details/114106272)
+
+#### Docsify三连
+
+和hexo差不多，只不过多了在本地push，服务器pull的步骤
+
+1. 本地修改并提交到github
+
+   ```bash
+   git add .
+   git commit -m '2022/MM/DD first commit'
+   git push origin main
+   ```
+
+   
+
+2. 服务器拉取
+
+   ```bash
+   git pull origin main
+   # 有可能报错，则先执行下面这句
+   git config --global pull.ff only
+   ```
+
+   
+
+3. Nginx重启
+
+   ```bash
+   cd /usr/local/nginx/sbin
+   ./nginx -s stop
+   ./nginx
+   ```
+
+   
+
 </details>
+
+
 

@@ -1,13 +1,13 @@
 ## January
 
-| Sunday         | Monday                  | Tuesday                   | Wednesday             | Thursday                | Friday                    | Saturday                 |
-| -------------- | ----------------------- | ------------------------- | --------------------- | ----------------------- | ------------------------- | ------------------------ |
-|                |                         |                           |                       |                         |                           | 1 出去玩了               |
-| 2 学半天玩半天 | [3 开始写日记](#_01-03) | [4 做了好多优化](#_01-04) | [5 准备入职](#_01-05) | [6 今天事好多](#_01-06) | [7 整完云日记了](#_01-07) | [8 docsify优化](#_01-08) |
-| 9              | 10                      | 11                        | 12                    | 13                      | 14                        | 15                       |
-| 16             | 17                      | 18                        | 19                    | 20                      | 21                        | 22                       |
-| 23             | 24                      | 25                        | 26                    | 27                      | 28                        | 29                       |
-| 30             | 31                      |                           |                       |                         |                           |                          |
+| Sunday             | Monday            | Tuesday            | Wednesday         | Thursday          | Friday            | Saturday          |
+| ------------------ | ----------------- | ------------------ | ----------------- | ----------------- | ----------------- | ----------------- |
+|                    |                   |                    |                   |                   |                   | 1                 |
+| 2                  | [3 写了](#_01-03) | [4 写了](#_01-04)  | [5 写了](#_01-05) | [6 写了](#_01-06) | [7 写了](#_01-07) | [8 写了](#_01-08) |
+| 9                  | 10                | 11                 | 12                | 13                | 14                | 15                |
+| [16 写了](#_01-16) | 17                | 18                 | 19                | 20                | 21                | 22                |
+| 23                 | 24                | [25 写了](#_01-25) | 26                | 27                | 28                | 29                |
+| 30                 | 31                |                    |                   |                   |                   |                   |
 
 
 
@@ -145,7 +145,7 @@ Github的索引以url呈现：`https//github.com/user/repo#Github-is-Good`，因
 
 如果是在typora里编辑的话，就不用在html块里写了，这是md和GFW语法差异导致的
 
-<img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220104101045890.png" width=80% />
+<img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220104101045890.png" width=60% />
 
 其实上面也属于优化的一部分...不过图都截了，懒得改标题了
 
@@ -542,13 +542,125 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
 ![image-20220108110402230](D:\hexo\themes\pure\source\images\README\image-20220108110402230.png)
 
+#### Windows右键新建添加Markdown选项
+
+参考：[CSDN博客](https://blog.csdn.net/qq_39309348/article/details/108627819)
+
+win+r 输入 regedit 打开注册表
+
+1. 找到`计算机\HKEY_CLASSES_ROOT\.md`，修改默认值为`typora.md`
+2. 在`计算机\HKEY_CLASSES_ROOT\.md`下新建项`ShellNew`
+3. 在`计算机\HKEY_CLASSES_ROOT\.md\ShellNew`下新建字符串值为`NullFile`，修改值为`typora.md`
+4. 完事右键就有新建markdown file了
 
 
-#### Docsify优化
 
-整理一下发现挺多的，打算放到博客上
+#### Docsify个性化
+
+今天几乎一整天都在搞这个了，到晚上终于基本搞定了，本来想白天搞完晚上回宿舍收东西，没想到插件研究了好久，等过几天安顿下来再写个教程吧
 
 
+
+</details>
+
+### 01-16<span id='0116'></span>
+
+<details>
+    <summary>点击展开</summary>
+
+
+
+#### windows设置文件关联（使用某默认应用打开某文件类型）
+
+源于公司的网会ban掉一些国外的官网下载，有些应用软件管家并没有即时更新，因此要从自己的电脑拷贝文件过来，但是拷贝的文件往往没有配置环境变量和注册表，因此需要手动设置默认打开
+
+1. ctrl+s 默认应用
+
+   <img src="D:\hexo\themes\pure\source\images\January\image-20220116120322896.png" width=80%/>
+
+2. 打开“按文件类型指定默认应用”
+
+3. 找到 “.md” ，将其右边的应用设置为typora（其他类型文件同理）
+
+</details>
+
+
+
+### 01-25<span id="0125"></span>
+
+<details>
+    <summary>点击展开</summary>
+
+
+
+#### Git Bash一个报错
+
+报错内容：
+
+```
+error: fsmonitor_ipc__send_query: unspecified error on '.git/fsmonitor--daem'
+```
+
+参考StackOverflow：https://stackoverflow.com/questions/68915288/git-bash-error-fsmonitor-ipc-send-query
+
+大概就是开个任务管理器，把里面Git的进程都结束掉就行（亲测可行）
+
+#### Git Bash在pull时另一个报错
+
+报错内容：执行`git pull origin main`时的警告
+
+```
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+```
+
+解决：先`git config --global pull.ff only`再`git pull origin main`
+
+参考：[StackOverflow](https://stackoverflow.com/questions/65971134/warning-pulling-without-specifying-how-to-reconcile-divergent-branches-is-disco)、[CSDN](https://blog.csdn.net/wq6ylg08/article/details/114106272)
+
+#### Docsify三连
+
+和hexo差不多，只不过多了在本地push，服务器pull的步骤
+
+1. 本地修改并提交到github
+
+   ```bash
+   git add .
+   git commit -m '2022/MM/DD first commit'
+   git push origin main
+   ```
+
+   
+
+2. 服务器拉取
+
+   ```bash
+   git pull origin main
+   # 有可能报错，则先执行下面这句
+   git config --global pull.ff only
+   ```
+
+   
+
+3. Nginx重启
+
+   ```bash
+   cd /usr/local/nginx/sbin
+   ./nginx -s stop
+   ./nginx
+   ```
+
+   
 
 </details>
 
