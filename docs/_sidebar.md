@@ -4,7 +4,7 @@
 
 - [<big>**MyDiary**</big>](/)
   - 2022
-    - [January](2022/January?id=january)
+    - [January](2022/January)
     - [February](2022/February)
 
 - [<big>**MyDocsify**</big>](/)
