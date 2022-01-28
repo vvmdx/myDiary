@@ -49,6 +49,9 @@
       - [Git Bash一个报错](#git-bash一个报错)
       - [Git Bash在pull时另一个报错](#git-bash在pull时另一个报错)
       - [Docsify三连](#docsify三连)
+    - [01-27](#01-27)
+      - [ubuntu使用root用户登录系统](#ubuntu使用root用户登录系统)
+      - [程序包无效：“CRX_HEADER_INVALID“](#程序包无效crx_header_invalid)
 
 
 
@@ -754,4 +757,43 @@ invocation.
 </details>
 
 
+
+### 01-27
+
+<details>
+    <summary>点击展开</summary>
+ 
+
+#### ubuntu使用root用户登录系统
+
+ubuntu普通用户下可以切换成root命令行，但是默认禁用使用root登录系统，因此需要改下配置
+
+参考：[CSDN](https://coco56.blog.csdn.net/article/details/107628019?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3.pc_relevant_paycolumn_v3&utm_relevant_index=6)
+
+1. 新增root用户：`sudo passwd root` 先输入普通用户密码，再设置root密码
+
+2. 修改配置文件：`sudo gedit /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf`
+
+   增加一行：`greeter-show-manual-login=true` 允许手动输入登录系统的用户名和密码
+
+3. `sudo gedit /etc/pam.d/gdm-autologin`注释掉第三行（在前面加`#`）`#auth required pam_succeed_if.so user != root quiet_success`
+
+4. `sudo gedit /etc/pam.d/gdm-password`同样注释第三行`#auth required pam_succeed_if.so user != root quiet_success`
+
+5. `sudo gedit /root/.profile`注释掉末尾的`mesg n 2> /dev/null || true`，添加一行`tty -s&&mesg n || true`
+
+6. `reboot`重启，登录处点击`未列出?`，手动输入root和密码即可登录
+
+
+
+#### 程序包无效：“CRX_HEADER_INVALID“
+
+chrome扩展程序，拉进crx文件时可能会报这个错
+
+1. 把`crx`改为`rar`后缀
+2. 解压，把`_metadata`改为`metadata`
+3. 打开`chrome://extensions/`，进入开发者模式，点击“加载已解压的扩展程序”即可使用
+4. 若不行，则将修改完的文件夹再压缩回rar，然后改后缀名为crx，再安装
+
+</details>
 
