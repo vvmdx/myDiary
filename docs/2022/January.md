@@ -9,13 +9,43 @@
 | 23                 | 24                | [25 写了](#_01-25) | 26                | 27                | 28                | 29                |
 | 30                 | 31                |                    |                   |                   |                   |                   |
 
-
+- [January](#january)
+    - [01-03](#01-03)
+      - [Github连续贡献记录](#github连续贡献记录)
+      - [vscode快速生成github readme目录](#vscode快速生成github-readme目录)
+      - [github和本地git远程关联](#github和本地git远程关联)
+      - [继续整理sql注入专题总结到时更新到博客上](#继续整理sql注入专题总结到时更新到博客上)
+    - [01-04](#01-04)
+      - [Github readme 部分折叠](#github-readme-部分折叠)
+      - [Github连续贡献样式优化](#github连续贡献样式优化)
+      - [markdown日历+锚点](#markdown日历锚点)
+      - [github代码贡献图](#github代码贡献图)
+    - [01-05](#01-05)
+      - [在云服务器上搭建个人云笔记/博客](#在云服务器上搭建个人云笔记博客)
+    - [01-06](#01-06)
+      - [（续）在云服务器上搭建个人云笔记/博客](#（续）在云服务器上搭建个人云笔记博客)
+      - [Git push报错](#git-push报错)
+      - [python开启http服务却访问不了](#python开启http服务却访问不了)
+      - [Linux查看端口占用并杀进程](#linux查看端口占用并杀进程)
+      - [Xshell免费版](#xshell免费版)
+      - [Centos7安装npm](#centos7安装npm)
+    - [01-07](#01-07)
+      - [CentOS-7安装Nginx](#centos-7安装nginx)
+      - [（续）在云服务器上搭建个人云笔记/博客](#（续）在云服务器上搭建个人云笔记博客-1)
+      - [Nginx部署docsify出现403](#nginx部署docsify出现403)
+    - [01-08](#01-08)
+      - [vps+docsify域名访问和ip访问不一致问题](#vpsdocsify域名访问和ip访问不一致问题)
+      - [解决windows下docsify通过npm全局安装命令行不生效的问题](#解决windows下docsify通过npm全局安装命令行不生效的问题)
+      - [Windows右键新建添加Markdown选项](#windows右键新建添加markdown选项)
+      - [Docsify个性化](#docsify个性化)
+    - [01-16<span id='0116'></span>](#01-16)
+      - [windows设置文件关联（使用某默认应用打开某文件类型）](#windows设置文件关联（使用某默认应用打开某文件类型）)
+    - [01-25<span id="0125"></span>](#01-25)
+      - [Git Bash一个报错](#git-bash一个报错)
+      - [Git Bash在pull时另一个报错](#git-bash在pull时另一个报错)
+      - [Docsify三连](#docsify三连)
 
 ### 01-03
-
-<details>
-    <summary>点击展开</summary>
-
 
 
 今天突发奇想，想做一下学习记录，当作小日记之类的（主要是想和博客分开，博客记录的都是一些专题，这里更想分享记录一些好玩的有趣的或者提高生产力的东西），一方面可以看看自己学习的进度和效率，一方面通过日记也可以倒逼自己不摸鱼（尽量...
@@ -117,17 +147,13 @@ Github的索引以url呈现：`https//github.com/user/repo#Github-is-Good`，因
 
 11. 推送到远程 `git push origin main`
 
-#### 继续整理sql注入专题总结（到时更新到博客上
+#### 继续整理sql注入专题总结到时更新到博客上
 
 今天总算把报错注入全搞定了，之前还真不知道居然有这么多种姿势，总结了一下其实很多都是因为各种函数的参数格式不正确导致的，或许将来某一天有新的函数的时候，也可以按这个方式找找新的利用姿势也说不定
 
-</details>
+
 
 ### 01-04
-
-<details>
-    <summary>点击展开</summary>
-
 
 #### Github readme 部分折叠
 
@@ -195,13 +221,9 @@ Github上高star的项目2：https://github.com/sallar/github-contributions-char
 
 顺便授人鱼不如授人与渔，GitHub搜索关键字：github calendar、github chart、github contribution大概就能搜到了
 
-</details>
+
 
 ### 01-05
-
-<details>
-    <summary>点击展开</summary>
-
 
 本来打算年后入职的，昨晚导师联系后建议年前过去，遂要在一周内买机票、找房子、找找厚衣服（上海比广州冷多了...），还得和学院申请出省，收拾宿舍（大概下学期也不怎么回来了吧），虽然不是第一次实习了，但确实是第一次正儿八经的独自在外面生活，还是有点慌的
 
@@ -253,15 +275,9 @@ Github上高star的项目2：https://github.com/sallar/github-contributions-char
 
 9. 今天先整到这...剩下的明天继续
 
-</details>
-
 
 
 ### 01-06
-
-<details>
-    <summary>点击展开</summary>
- 
 
 #### （续）在云服务器上搭建个人云笔记/博客
 
@@ -397,15 +413,7 @@ npm -v
 
 
 
-</details>
-
-
-
 ### 01-07
-
-<details>
-    <summary>点击展开</summary>
- 
 
 #### CentOS-7安装Nginx
 
@@ -512,17 +520,7 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
 
 
-</details>
-
-
-
-
-
 ### 01-08
-
-<details>
-    <summary>点击展开</summary>
- 
 
 #### vps+docsify域名访问和ip访问不一致问题
 
@@ -540,7 +538,9 @@ docsify命令行文档：https://github.com/docsifyjs/docsify-cli
 
 因此需要将该路径添加到环境变量 >> Path中即可
 
-![image-20220108110402230](D:\hexo\themes\pure\source\images\README\image-20220108110402230.png)
+![image-20220108110402230](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220108110402230.png)
+
+
 
 #### Windows右键新建添加Markdown选项
 
@@ -561,13 +561,7 @@ win+r 输入 regedit 打开注册表
 
 
 
-</details>
-
 ### 01-16<span id='0116'></span>
-
-<details>
-    <summary>点击展开</summary>
-
 
 
 #### windows设置文件关联（使用某默认应用打开某文件类型）
@@ -576,21 +570,15 @@ win+r 输入 regedit 打开注册表
 
 1. ctrl+s 默认应用
 
-   <img src="D:\hexo\themes\pure\source\images\January\image-20220116120322896.png" width=80%/>
+   <img src="https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220116120322896.png" width=80%/>
 
 2. 打开“按文件类型指定默认应用”
 
 3. 找到 “.md” ，将其右边的应用设置为typora（其他类型文件同理）
 
-</details>
-
 
 
 ### 01-25<span id="0125"></span>
-
-<details>
-    <summary>点击展开</summary>
-
 
 
 #### Git Bash一个报错
@@ -661,8 +649,6 @@ invocation.
    ```
 
    
-
-</details>
 
 
 
