@@ -119,7 +119,7 @@
 
       上面是目录展开状态，可以和下面对比一下，后面的`aria-expanded`和`style`参数可以不用管
 
-      ![image-20220213213026557](C:\Users\90799\AppData\Roaming\Typora\typora-user-images\image-20220213213026557.png)
+      ![image-20220213213026557](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220213213026557.png)
 
    6. 最后修改语言配置文件`hexo\themes\pure\languages\zh-CN.yml`
 
@@ -147,5 +147,4 @@
       ```
 
       
-
 
