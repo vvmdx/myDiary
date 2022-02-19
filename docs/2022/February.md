@@ -1,12 +1,12 @@
 # February
 
-| Sun.               | Mon. | Tues. | Wed.              | Thur. | Fri.               | Sat. |
-| ------------------ | ---- | ----- | ----------------- | ----- | ------------------ | ---- |
-|                    |      | 1     | 2                 | 3     | 4                  | 5    |
-| 6                  | 7    | 8     | [9 写了](#_02-09) | 10    | 11                 | 12   |
-| [13 写了](#_02-13) | 14   | 15    | 16                | 17    | [18 写了](#_02-18) | 19   |
-| 20                 | 21   | 22    | 23                | 24    | 25                 | 26   |
-| 27                 | 28   |       |                   |       |                    |      |
+| Sun.               | Mon. | Tues. | Wed.              | Thur. | Fri.               | Sat.               |
+| ------------------ | ---- | ----- | ----------------- | ----- | ------------------ | ------------------ |
+|                    |      | 1     | 2                 | 3     | 4                  | 5                  |
+| 6                  | 7    | 8     | [9 写了](#_02-09) | 10    | 11                 | 12                 |
+| [13 写了](#_02-13) | 14   | 15    | 16                | 17    | [18 写了](#_02-18) | [19 写了](#_02-19) |
+| 20                 | 21   | 22    | 23                | 24    | 25                 | 26                 |
+| 27                 | 28   |       |                   |       |                    |                    |
 
 
 
@@ -161,3 +161,35 @@ https://github.com/vvmdx/Sec-Interview-4-2023
 ### Github PR是啥
 
 知乎这篇讲的真不错：https://www.zhihu.com/question/21682976/answer/79489643
+
+
+
+## 02-19
+
+### Github个人主页
+
+1. 新建和自己id同名从仓库
+2. 引入一个链接 ==> https://github.com/anuraghazra/github-readme-stats  看这个怎么搞就行
+3. readme.md如下（以我自己为例）
+
+```md
+# vvmdx
+
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=vvmdx&theme=gruvbox&count_private=true&hide=prs&line_height=30" />
+
+- 中度肥宅
+- 二刺螈
+- 误打误撞走上安全路
+- 目前希望能顺利毕业+找个好工作:)
+
+## 
+
+博客: https://vvmdx.github.io/
+
+<!-- <img src="https://github-readme-stats.vercel.app/api/pin/?username=vvmdx&repo=Sec-Interview-4-2023&theme=slateorange" /> -->
+```
+
+效果：
+
+![image-20220219211414863](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220219211414863.png)
+
