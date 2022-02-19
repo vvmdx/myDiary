@@ -47,8 +47,6 @@
       - [解决windows下docsify通过npm全局安装命令行不生效的问题](#解决windows下docsify通过npm全局安装命令行不生效的问题)
       - [Windows右键新建添加Markdown选项](#windows右键新建添加markdown选项)
       - [Docsify个性化](#docsify个性化)
-    - [01-09](#01-09)
-    - [01-10](#01-10)
     - [01-16](#01-16)
       - [windows设置文件关联（使用某默认应用打开某文件类型）](#windows设置文件关联使用某默认应用打开某文件类型)
     - [01-25](#01-25)
@@ -58,6 +56,16 @@
     - [01-27](#01-27)
       - [ubuntu使用root用户登录系统](#ubuntu使用root用户登录系统)
       - [程序包无效：“CRX_HEADER_INVALID“](#程序包无效crx_header_invalid)
+    - [02-09](#02-09)
+      - [PicGo+Gitee](#PicGo+Gitee)
+      - [Apache ShardingSphere ElasticJob-UI漏洞复现](#Apache ShardingSphere ElasticJob-UI漏洞复现)
+    - [02-13](#02-13)
+      - [hexo pure主题 个性化](#hexo pure主题 个性化)
+    - [02-18](#02-18)
+      - [整理了面试题](#整理了面试题)
+      - [Github PR是啥](#Github PR是啥)
+    - [02-19](#02-19)
+      - [Github个人主页个性化](#Github个人主页个性化)
 
 
 
@@ -969,7 +977,7 @@ https://github.com/vvmdx/Sec-Interview-4-2023
 
 
 
-#### Github个人主页
+#### Github个人主页个性化
 
 1. 新建和自己id同名从仓库
 2. 引入一个链接 ==> https://github.com/anuraghazra/github-readme-stats  看这个怎么搞就行
