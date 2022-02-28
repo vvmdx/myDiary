@@ -1,13 +1,27 @@
 # February
 
-| Sun.               | Mon. | Tues. | Wed.              | Thur. | Fri.               | Sat.               |
-| ------------------ | ---- | ----- | ----------------- | ----- | ------------------ | ------------------ |
-|                    |      | 1     | 2                 | 3     | 4                  | 5                  |
-| 6                  | 7    | 8     | [9 写了](#_02-09) | 10    | 11                 | 12                 |
-| [13 写了](#_02-13) | 14   | 15    | 16                | 17    | [18 写了](#_02-18) | [19 写了](#_02-19) |
-| 20                 | 21   | 22    | 23                | 24    | 25                 | 26                 |
-| 27                 | 28   |       |                   |       |                    |                    |
+| Sun.               | Mon.               | Tues. | Wed.              | Thur. | Fri.               | Sat.               |
+| ------------------ | ------------------ | ----- | ----------------- | ----- | ------------------ | ------------------ |
+|                    |                    | 1     | 2                 | 3     | 4                  | 5                  |
+| 6                  | 7                  | 8     | [9 写了](#_02-09) | 10    | 11                 | 12                 |
+| [13 写了](#_02-13) | 14                 | 15    | 16                | 17    | [18 写了](#_02-18) | [19 写了](#_02-19) |
+| 20                 | 21                 | 22    | 23                | 24    | 25                 | 26                 |
+| 27                 | [28 写了](#_02-28) |       |                   |       |                    |                    |
 
+
+- [February](#february)
+  - [02-09](#02-09)
+    - [PicGo+Gitee](#picgogitee)
+    - [Apache ShardingSphere ElasticJob-UI漏洞复现](#apache-shardingsphere-elasticjob-ui漏洞复现)
+  - [02-13](#02-13)
+    - [hexo pure主题 个性化](#hexo-pure主题-个性化)
+  - [02-18](#02-18)
+    - [整理了面试题](#整理了面试题)
+    - [Github PR是啥](#github-pr是啥)
+  - [02-19](#02-19)
+    - [Github个人主页](#github个人主页)
+  - [02-28](#02-28)
+    - [Python 格式化字符串f-string](#python-格式化字符串f-string)
 
 
 ## 02-09
@@ -192,4 +206,24 @@ https://github.com/vvmdx/Sec-Interview-4-2023
 效果：
 
 ![image-20220219211414863](https://cdn.jsdelivr.net/gh/vvmdx/myImageForPicgo@main//img/image-20220219211414863.png)
+
+
+
+## 02-28
+
+### Python 格式化字符串f-string
+
+今天遇到一个问题，当python使用f-string时，外层有花括号会出现`Expression fragment inside an f-string is nested too deeply`
+
+查了后发现其实是因为在使用一个花括号来占位时，外层若还有一个花括号，则需要双写花括号如下
+
+```python
+string1 = "abc"
+string2 = f"{{This is string1: {string1}}}"
+print(string2)
+
+# {This is string1: abc}
+```
+
+
 
